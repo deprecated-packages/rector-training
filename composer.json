@@ -1,0 +1,9 @@
+{
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "rector/rector": "^0.5.10",
+        "symplify/easy-coding-standard": "^6.0"
+    }
+}
