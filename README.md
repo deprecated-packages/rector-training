@@ -37,11 +37,12 @@
 
 ### 1. Install Rector
 
-- clone this repository :check:
-
-```bash
-git clone git@github.com:rectorphp/rector-training.git
-```
+1. clone this repository :check:  
+    ```bash
+    git clone git@github.com:rectorphp/rector-training.git
+    ```
+2. run `composer install`
+ 
 
 ### 2. First Changes
 
