@@ -33,5 +33,4 @@ services:
   Rector\PSR4\Rector\Namespace_\NormalizeNamespaceByPSR4ComposerAutoloadRector: ~
 
 parameters:
-  autoload_paths:
-    - psr4
+  php_version_features: '7.4'

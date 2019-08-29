@@ -8,8 +8,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Rector\\RectorTraining\\": "src",
-            "Rector\\RectorTraining\\PSR4\\": "psr4"
+            "Rector\\RectorTraining\\": "src/",
+            "Rector\\RectorTraining\\PSR4\\": "psr4/"
         }
     },
     "scripts": {
