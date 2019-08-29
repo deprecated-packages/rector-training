@@ -1,36 +1,35 @@
 services:
+    ## Renaming
+    #  Rector\Rector\Class_\RenameClassRector:
+    #    Rector\RectorTraining\Renaming\OldClassName: Rector\RectorTraining\Renaming\ShinyNewClass
 
-## Renaming
-#  Rector\Rector\Class_\RenameClassRector:
-#    Rector\RectorTraining\Renaming\OldClassName: Rector\RectorTraining\Renaming\ShinyNewClass
+    #  Rector\Rector\MethodCall\RenameMethodRector:
+    #    Rector\RectorTraining\Renaming\MyClass:
+    #      oldMethod: newMethod
 
-#  Rector\Rector\MethodCall\RenameMethodRector:
-#    Rector\RectorTraining\Renaming\MyClass:
-#      oldMethod: newMethod
+    #  Rector\Rector\Function_\RenameFunctionRector:
+    #    rand: random_int
 
-#  Rector\Rector\Function_\RenameFunctionRector:
-#    rand: random_int
+    ## Dead code
+    #  Rector\DeadCode\Rector\ClassMethod\RemoveDeadConstructorRector: ~
+    #  Rector\DeadCode\Rector\ClassMethod\RemoveUnusedPrivateMethodRector: ~
+    #  Rector\DeadCode\Rector\ClassMethod\RemoveDelegatingParentCallRector: ~
+    #  Rector\DeadCode\Rector\MethodCall\RemoveDefaultArgumentValueRector: ~
+    #  Rector\DeadCode\Rector\Property\RemoveUnusedPrivatePropertyRector: ~
 
-## Dead code
-#  Rector\DeadCode\Rector\ClassMethod\RemoveDeadConstructorRector: ~
-#  Rector\DeadCode\Rector\ClassMethod\RemoveUnusedPrivateMethodRector: ~
-#  Rector\DeadCode\Rector\ClassMethod\RemoveDelegatingParentCallRector: ~
-#  Rector\DeadCode\Rector\MethodCall\RemoveDefaultArgumentValueRector: ~
-#  Rector\DeadCode\Rector\Property\RemoveUnusedPrivatePropertyRector: ~
+    ## Code quality
+    #  Rector\CodeQuality\Rector\Array_\CallableThisArrayToAnonymousFunctionRector: ~
+    #  Rector\CodeQuality\Rector\Class_\CompleteDynamicPropertiesRector: ~
 
-## Code quality
-#  Rector\CodeQuality\Rector\Array_\CallableThisArrayToAnonymousFunctionRector: ~
-#  Rector\CodeQuality\Rector\Class_\CompleteDynamicPropertiesRector: ~
+    ## Typehints
+    #  Rector\TypeDeclaration\Rector\FunctionLike\ReturnTypeDeclarationRector: ~
+    #  Rector\TypeDeclaration\Rector\FunctionLike\ParamTypeDeclarationRector: ~
+    #  Rector\TypeDeclaration\Rector\Property\PropertyTypeDeclarationRector: ~
+    #  Rector\TypeDeclaration\Rector\ClassMethod\AddArrayReturnDocTypeRector: ~
 
-## Typehints
-#  Rector\TypeDeclaration\Rector\FunctionLike\ReturnTypeDeclarationRector: ~
-#  Rector\TypeDeclaration\Rector\FunctionLike\ParamTypeDeclarationRector: ~
-#  Rector\TypeDeclaration\Rector\Property\PropertyTypeDeclarationRector: ~
-#  Rector\TypeDeclaration\Rector\ClassMethod\AddArrayReturnDocTypeRector: ~
-
-## PSR4
-  Rector\Rector\Psr4\MultipleClassFileToPsr4ClassesRector: ~
-  Rector\PSR4\Rector\Namespace_\NormalizeNamespaceByPSR4ComposerAutoloadRector: ~
+    ## PSR4
+#    Rector\Rector\Psr4\MultipleClassFileToPsr4ClassesRector: ~
+    Rector\PSR4\Rector\Namespace_\NormalizeNamespaceByPSR4ComposerAutoloadRector: ~
 
 parameters:
-  php_version_features: '7.4'
+    php_version_features: '7.4'
