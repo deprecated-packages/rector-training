@@ -1,8 +1,10 @@
 <?php declare (strict_types=1);
 
-namespace Rector\RectorTraining\TypeHints;
+namespace Rector\RectorTraining\Php74;
 
-final class Php74TypedProperties
+use Rector\RectorTraining\TypeHints\MessedUpClass;
+
+final class TypedProperties
 {
 	/**
 	 * @var MessedUpClass|null
