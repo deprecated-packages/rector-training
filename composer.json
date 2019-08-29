@@ -4,13 +4,16 @@
     },
     "require-dev": {
         "rector/rector": "^0.5.10",
-        "symplify/easy-coding-standard": "^6.0"
+        "symplify/easy-coding-standard": "^6.0",
+        "tracy/tracy": "^2.6"
     },
     "autoload": {
         "psr-4": {
-            "Rector\\RectorTraining\\": "src/",
-            "Rector\\RectorTraining\\PSR4\\": "psr4/"
-        }
+            "Rector\\RectorTraining\\": "src",
+            "Rector\\RectorTraining\\PSR4\\App\\": "psr4/App",
+            "Rector\\RectorTraining\\PSR4\\MultipleClasses\\": "psr4/MultipleClasses"
+        },
+        "classmap": ["psr4/App"]
     },
     "scripts": {
         "rector": "vendor/bin/rector process src --dry-run",
