@@ -1,0 +1,13 @@
+<?php declare (strict_types=1);
+
+namespace Rector\RectorTraining\PSR4;
+
+final class ClassA
+{
+
+}
+
+final class ClassB
+{
+
+}
