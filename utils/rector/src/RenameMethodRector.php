@@ -5,6 +5,7 @@ namespace App\Utils\Rector;
 use PhpParser\Node;
 use PhpParser\Node\Expr\FuncCall;
 use Rector\Rector\AbstractRector;
+use Rector\RectorDefinition\CodeSample;
 use Rector\RectorDefinition\RectorDefinition;
 
 final class RenameMethodRector extends AbstractRector
@@ -42,7 +43,13 @@ final class RenameMethodRector extends AbstractRector
 
     public function getDefinition(): RectorDefinition
     {
-        // TODO: Implement getDefinition() method.
+        return new RectorDefinition(
+            'Change method name even in [$this, "value"]', [
+            new CodeSample(
+                '[$this, "oldMethod"]',
+                '[$this, "newMethod"]'
+            )
+        ]);
     }
 
     private function renameMethod(FuncCall $node, array $oldToNewMethod)
