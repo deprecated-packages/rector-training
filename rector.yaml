@@ -1,7 +1,8 @@
 services:
     ## Renaming
-    #  Rector\Rector\Class_\RenameClassRector:
-    #    Rector\RectorTraining\Renaming\OldClassName: Rector\RectorTraining\Renaming\ShinyNewClass
+    Rector\Rector\Class_\RenameClassRector:
+        # old_class: new_class
+        Rector\RectorTraining\Renaming\OldClassName: Rector\RectorTraining\Renaming\ShinyNewClass
 
     #  Rector\Rector\MethodCall\RenameMethodRector:
     #    Rector\RectorTraining\Renaming\MyClass:

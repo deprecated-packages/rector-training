@@ -4,6 +4,11 @@ namespace Rector\RectorTraining\Renaming;
 
 final class MyClass
 {
+    /**
+     * @ORM\OneToMany(targetEntity="Rector\RectorTraining\Renaming\OldClassName")
+     */
+    private $someOldClass;
+
 	public function create(): OldClassName
 	{
 		$this->oldMethod();
