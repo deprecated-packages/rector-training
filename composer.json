@@ -8,7 +8,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Rector\\RectorTraining\\": "src"
+            "Rector\\RectorTraining\\": "src/",
+            "Rector\\RectorTraining\\PSR4\\": "psr4/"
         }
+    },
+    "scripts": {
+        "rector": "vendor/bin/rector process src --dry-run",
+        "fix-rector": "vendor/bin/rector process src",
+        "cs": "vendor/bin/ecs check src --ansi",
+        "fix-cs": "vendor/bin/ecs check src --ansi --fix"
     }
 }
