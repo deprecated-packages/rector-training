@@ -1,5 +1,2 @@
 services:
-    App\Utils\Rector\RenameMethodRector:
-        $oldMethodToNewMethod:
-            'oldMethod': 'newMethod'
-            'anotherOldMethod': 'anotherNewMethod'
+    App\Utils\Rector\ArrayToValueObjectRector: ~
