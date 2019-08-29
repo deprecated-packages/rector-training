@@ -15,6 +15,11 @@
         },
         "classmap": ["psr4/App"]
     },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Utils\\Rector\\":"utils/rector/src"
+        }
+    },
     "scripts": {
         "rector": "vendor/bin/rector process src --dry-run",
         "fix-rector": "vendor/bin/rector process src",
