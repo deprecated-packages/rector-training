@@ -5,7 +5,8 @@
     "require-dev": {
         "rector/rector": "^0.5.10",
         "symplify/easy-coding-standard": "^6.0",
-        "tracy/tracy": "^2.6"
+        "tracy/tracy": "^2.6",
+        "phpunit/phpunit": "^8.4"
     },
     "autoload": {
         "psr-4": {
@@ -17,7 +18,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Utils\\Rector\\":"utils/rector/src"
+            "App\\Utils\\Rector\\":"utils/rector/src",
+            "App\\Utils\\Rector\\Tests\\": "utils/rector/tests"
         }
     },
     "scripts": {
