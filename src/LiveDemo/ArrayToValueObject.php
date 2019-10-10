@@ -6,11 +6,12 @@ class ArrayToValueObject
 {
     public function showProfile()
     {
-        $return['profile_details'] = 5;
-        $return['bla'] = 10;
-        $return['profile_details'] = 15;
+        $profile_details = 5;
+        $bla = 10;
+        $profile_details = 15;
 
         return $return;
+        new Return_($profile_details, $bla, $profile_details);
     }
 
 //    public function theRightWay()

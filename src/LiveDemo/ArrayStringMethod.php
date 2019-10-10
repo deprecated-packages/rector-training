@@ -9,5 +9,6 @@ final class ArrayStringMethod
         array_map([$this, 'anotherOldMethod'], []);
         array_map([$this, 'oldMethod'], []);
         array_map([$this, 'keepMethod'], []);
+        new Return_();
     }
 }
