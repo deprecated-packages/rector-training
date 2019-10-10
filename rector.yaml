@@ -1,6 +1,2 @@
 services:
-    Rector\RectorTraining\Rector\AddStopItCommentRector:
-        arguments:
-            $variableNameToCommentMap:
-                ret: 'I know this is return variable, Tom'
-                arr: 'I know this is an array, Tom'
+    Rector\RectorTraining\Rector\AddValidateToConstructorRector: ~
