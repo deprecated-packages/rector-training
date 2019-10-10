@@ -12,8 +12,14 @@ final class RenameMethodRectorTest extends AbstractRectorTestCase
         $this->doTestFile(__DIR__ . '/Fixture/first_test.php.inc');
     }
 
-    protected function getRectorClass(): string
+    protected function getRectorsWithConfiguration(): array
     {
-        return RenameMethodRector::class;
+        return [
+            RenameMethodRector::class => [
+                '$oldMethodToNewMethod' => [
+                    'oldMethod' => 'newMethod',
+                ],
+            ],
+        ];
     }
 }

@@ -46,8 +46,8 @@ final class RenameMethodRector extends AbstractRector
         return new RectorDefinition(
             'Change method name even in [$this, "value"]', [
             new CodeSample(
-                'array_map($items, [$this, "oldMethod"])',
-                'array_map($items, [$this, "newMethod"])'
+                'array_map([$this, "oldMethod"], $items)',
+                'array_map([$this, "newMethod", $items])'
             ),
         ]);
     }

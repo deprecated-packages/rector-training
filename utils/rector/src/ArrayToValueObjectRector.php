@@ -3,9 +3,7 @@
 namespace App\Utils\Rector;
 
 use PhpParser\Node;
-use PhpParser\Node\Expr\FuncCall;
 use Rector\Rector\AbstractRector;
-use Rector\RectorDefinition\CodeSample;
 use Rector\RectorDefinition\RectorDefinition;
 
 final class ArrayToValueObjectRector extends AbstractRector
