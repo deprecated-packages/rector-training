@@ -2,16 +2,11 @@
 
 namespace Rector\RectorTraining\Rector;
 
-<<<<<<< HEAD
-use PhpParser\Builder\Property;
-use PhpParser\Node;
 use PhpParser\Node\Expr\PropertyFetch;
 use PhpParser\Node\Expr\Variable;
 use Rector\NodeContainer\ParsedNodesByType;
 use Rector\NodeTypeResolver\Node\AttributeKey;
-=======
 use PhpParser\Node;
->>>>>>> camelize rector
 use Rector\Rector\AbstractRector;
 use Rector\RectorDefinition\RectorDefinition;
 use Symplify\PackageBuilder\Strings\StringFormatConverter;
@@ -23,7 +18,6 @@ final class CamelizeRector extends AbstractRector
      */
     private $stringFormatConverter;
 
-<<<<<<< HEAD
     /**
      * @var ParsedNodesByType
      */
@@ -33,11 +27,6 @@ final class CamelizeRector extends AbstractRector
     {
         $this->stringFormatConverter = $stringFormatConverter;
         $this->parsedNodesByType = $parsedNodesByType;
-=======
-    public function __construct(StringFormatConverter $stringFormatConverter)
-    {
-        $this->stringFormatConverter = $stringFormatConverter;
->>>>>>> camelize rector
     }
 
     /**
@@ -45,7 +34,6 @@ final class CamelizeRector extends AbstractRector
      */
     public function getNodeTypes(): array
     {
-<<<<<<< HEAD
         return [Node\Name::class, Node\Identifier::class];
     }
 
@@ -59,16 +47,6 @@ final class CamelizeRector extends AbstractRector
             return null;
         }
 
-=======
-        return [Node\Expr\Variable::class];
-    }
-
-    /**
-     * @param Node\Expr\Variable $node
-     */
-    public function refactor(Node $node): ?Node
-    {
->>>>>>> camelize rector
         $variableName = $this->getName($node);
 
         // no "_" in the string
