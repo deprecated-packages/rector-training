@@ -11,7 +11,7 @@ final class MyClass
 	    // RecordType::recordArg($value, __METHOD__, 0);
 	    // int
 
-		$this->oldMethod();
+		$this->newMethod();
 
 		return new OldClassName();
 	}
