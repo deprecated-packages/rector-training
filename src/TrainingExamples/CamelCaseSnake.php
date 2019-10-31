@@ -4,6 +4,7 @@ namespace Rector\RectorTraining\TrainingExamples;
 
 final class CamelCaseSnake
 {
+<<<<<<< HEAD
     public $some_name;
     // after
     public $someName;
@@ -14,10 +15,17 @@ final class CamelCaseSnake
         $this->some_name = $asdf;
         $this->someOtherService->changeSomeNameToFloat();
 
+=======
+    private $some_name;
+
+    public function go()
+    {
+>>>>>>> camelize rector
         $http_response_header = 5;
 
         return $this->some_name;
     }
+<<<<<<< HEAD
 
     // after
     public function changeSomeNameToFloat()
@@ -36,4 +44,6 @@ class User
         // after
         // return $camelCaseSnake->getSomeName();
     }
+=======
+>>>>>>> camelize rector
 }
