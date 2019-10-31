@@ -2,7 +2,10 @@
 
 namespace Rector\RectorTraining\PSR4\MultipleClasses;
 
+final class ClassA
+{
+}
+
 final class ClassB
 {
-
 }
