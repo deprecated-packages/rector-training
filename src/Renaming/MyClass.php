@@ -2,6 +2,8 @@
 
 namespace Rector\RectorTraining\Renaming;
 
+use Rector\Renaming\Tests\Rector\Class_\RenameClassRector\Source\OldClassWithTypo;
+
 final class MyClass
 {
 	public function create($value): OldClassName
@@ -9,12 +11,12 @@ final class MyClass
 	    // RecordType::recordArg($value, __METHOD__, 0);
 	    // int
 
-		$this->oldMethod();
+		$this->newMethod();
 
 		return new OldClassName();
 	}
 
-	public function oldMethod(): void
+	public function newMethod(): void
 	{
 	    $this->create(5);
 
@@ -23,6 +25,6 @@ final class MyClass
 
 	public function generateRandom(): int
 	{
-		return rand(1, 6);
+		return random_int(1, 6);
 	}
 }
