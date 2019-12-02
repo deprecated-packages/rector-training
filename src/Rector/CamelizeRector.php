@@ -2,12 +2,11 @@
 
 namespace Rector\RectorTraining\Rector;
 
-use PhpParser\Builder\Property;
-use PhpParser\Node;
 use PhpParser\Node\Expr\PropertyFetch;
 use PhpParser\Node\Expr\Variable;
 use Rector\NodeContainer\ParsedNodesByType;
 use Rector\NodeTypeResolver\Node\AttributeKey;
+use PhpParser\Node;
 use Rector\Rector\AbstractRector;
 use Rector\RectorDefinition\RectorDefinition;
 use Symplify\PackageBuilder\Strings\StringFormatConverter;

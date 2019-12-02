@@ -1,2 +1,14 @@
 services:
-#    Rector\RectorTraining\Rector\AddValidateToConstructorRector: ~
+    _defaults:
+        autowire: true
+
+    # php
+    Rector\RectorTraining\Rector\CleanupAppStaticCallsRector: ~
+
+    # filesystem
+#    Rector\RectorTraining\Rector\ConvertMagicCakePHPUsesToImportsRector: ~
+
+    Rector\RectorTraining\Rector\CakePHPStaticCallAnalyzer: ~
+
+parameters:
+    auto_import_names: false
