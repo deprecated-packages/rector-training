@@ -1,6 +1,7 @@
 {
     "require": {
-        "php": "^7.1"
+        "php": "^7.1",
+        "cakephp/cakephp": "2.4.10"
     },
     "require-dev": {
         "rector/rector": "^0.5.20",
@@ -14,7 +15,8 @@
             "Rector\\RectorTraining\\PSR4\\App\\": "psr4/App",
             "Rector\\RectorTraining\\PSR4\\MultipleClasses\\": "psr4/MultipleClasses"
         },
-        "classmap": ["psr4/App"]
+        "classmap": ["psr4/App", "src/CakePHP"],
+        "files": ["vendor/cakephp/cakephp/lib/Cake/Core/App.php"]
     },
     "autoload-dev": {
         "psr-4": {

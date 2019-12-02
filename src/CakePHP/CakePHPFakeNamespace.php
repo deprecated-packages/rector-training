@@ -1,14 +1,11 @@
-<?php declare (strict_types=1);
+<?php
 
-// name of class, full path
-App::uses('NameOfClass', 'Directory/Name');
-# ↓
-# use Directory\Name\NameOfClass;
+App::import('SomeClass', 'SomeDir\Namespace');
 
 final class CakePHPFakeNamespace
 {
     public function run()
     {
-        // NameOfClass::someMethod()
+        App::import('Another', 'AnotherDir\Namespace');
     }
 }
